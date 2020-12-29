@@ -1,24 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YFT-zy-SWl">
+                                <rect key="frame" x="20" y="74" width="374" height="488"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcq-y7-UCS">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="149.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YmN-v6-UC0">
+                                                <rect key="frame" x="20" y="57.5" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YmN-v6-UC0" firstAttribute="leading" secondItem="gcq-y7-UCS" secondAttribute="leading" constant="20" id="DZZ-r2-Vdn"/>
+                                            <constraint firstItem="YmN-v6-UC0" firstAttribute="centerX" secondItem="gcq-y7-UCS" secondAttribute="centerX" id="lh4-aS-ect"/>
+                                            <constraint firstItem="YmN-v6-UC0" firstAttribute="centerY" secondItem="gcq-y7-UCS" secondAttribute="centerY" id="nHD-Xc-nLZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="YmN-v6-UC0" secondAttribute="trailing" constant="20" id="zKk-G2-luw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnJ-nA-hLA">
+                                        <rect key="frame" x="0.0" y="169.5" width="374" height="149"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0,00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rD7-9e-jho">
+                                                <rect key="frame" x="20" y="57.5" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="rD7-9e-jho" firstAttribute="leading" secondItem="EnJ-nA-hLA" secondAttribute="leading" constant="20" id="0WV-SY-UzB"/>
+                                            <constraint firstAttribute="trailing" secondItem="rD7-9e-jho" secondAttribute="trailing" constant="20" id="4eG-6b-cjO"/>
+                                            <constraint firstItem="rD7-9e-jho" firstAttribute="centerY" secondItem="EnJ-nA-hLA" secondAttribute="centerY" id="gOe-hY-PrA"/>
+                                            <constraint firstItem="rD7-9e-jho" firstAttribute="centerX" secondItem="EnJ-nA-hLA" secondAttribute="centerX" id="hwU-Qa-7w2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7J-uP-4mq">
+                                        <rect key="frame" x="0.0" y="338.5" width="374" height="149.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKr-tY-rOs">
+                                                <rect key="frame" x="20" y="58" width="334" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="QKr-tY-rOs" secondAttribute="trailing" constant="20" id="3QC-Ju-47y"/>
+                                            <constraint firstItem="QKr-tY-rOs" firstAttribute="leading" secondItem="P7J-uP-4mq" secondAttribute="leading" constant="20" id="4D6-ps-8wp"/>
+                                            <constraint firstItem="QKr-tY-rOs" firstAttribute="centerY" secondItem="P7J-uP-4mq" secondAttribute="centerY" id="hVv-ID-tES"/>
+                                            <constraint firstItem="QKr-tY-rOs" firstAttribute="centerX" secondItem="P7J-uP-4mq" secondAttribute="centerX" id="udd-bk-YuF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNO-bQ-7Df">
+                                <rect key="frame" x="182.5" y="570" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchOn:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dsc-aY-6bs"/>
+                                </connections>
+                            </switch>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YFT-zy-SWl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="7Sl-hv-vjL"/>
+                            <constraint firstItem="NNO-bQ-7Df" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8pR-9q-Y9k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YFT-zy-SWl" secondAttribute="bottom" constant="300" id="LLK-UT-757"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YFT-zy-SWl" secondAttribute="trailing" constant="20" id="ONU-oN-jgh"/>
+                            <constraint firstItem="YFT-zy-SWl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RaL-Vi-ITN"/>
+                            <constraint firstItem="NNO-bQ-7Df" firstAttribute="top" secondItem="YFT-zy-SWl" secondAttribute="bottom" constant="8" symbolic="YES" id="d4h-1P-4BM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cepTextField" destination="YmN-v6-UC0" id="Djv-Zb-6Rz"/>
+                        <outlet property="enableTextfield" destination="NNO-bQ-7Df" id="Jre-cN-ZWi"/>
+                        <outlet property="onOffTextField" destination="QKr-tY-rOs" id="Pea-sI-Y7U"/>
+                        <outlet property="valueTextField" destination="rD7-9e-jho" id="buA-fM-bxp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="79.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

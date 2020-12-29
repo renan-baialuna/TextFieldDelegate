@@ -13,6 +13,8 @@
 		80B80CC6259AA45A0021D0B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B80CC4259AA45A0021D0B4 /* Main.storyboard */; };
 		80B80CC8259AA4600021D0B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B80CC7259AA4600021D0B4 /* Assets.xcassets */; };
 		80B80CCB259AA4600021D0B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B80CC9259AA4600021D0B4 /* LaunchScreen.storyboard */; };
+		80B80CD6259AAAC40021D0B4 /* CepTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B80CD5259AAAC40021D0B4 /* CepTextFieldDelegate.swift */; };
+		80B80CD9259ADECB0021D0B4 /* MoneyTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B80CD8259ADECB0021D0B4 /* MoneyTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		80B80CC7259AA4600021D0B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80B80CCA259AA4600021D0B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80B80CCC259AA4600021D0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B80CD5259AAAC40021D0B4 /* CepTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CepTextFieldDelegate.swift; sourceTree = "<group>"; };
+		80B80CD8259ADECB0021D0B4 /* MoneyTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		80B80CBD259AA45A0021D0B4 /* TextDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				80B80CD3259AA54C0021D0B4 /* Text Field Delegate */,
 				80B80CBE259AA45A0021D0B4 /* AppDelegate.swift */,
 				80B80CC0259AA45A0021D0B4 /* SceneDelegate.swift */,
 				80B80CC2259AA45A0021D0B4 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				80B80CCC259AA4600021D0B4 /* Info.plist */,
 			);
 			path = TextDelegate;
+			sourceTree = "<group>";
+		};
+		80B80CD3259AA54C0021D0B4 /* Text Field Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				80B80CD5259AAAC40021D0B4 /* CepTextFieldDelegate.swift */,
+				80B80CD8259ADECB0021D0B4 /* MoneyTextFieldDelegate.swift */,
+			);
+			path = "Text Field Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				80B80CC3259AA45A0021D0B4 /* ViewController.swift in Sources */,
+				80B80CD6259AAAC40021D0B4 /* CepTextFieldDelegate.swift in Sources */,
+				80B80CD9259ADECB0021D0B4 /* MoneyTextFieldDelegate.swift in Sources */,
 				80B80CBF259AA45A0021D0B4 /* AppDelegate.swift in Sources */,
 				80B80CC1259AA45A0021D0B4 /* SceneDelegate.swift in Sources */,
 			);
